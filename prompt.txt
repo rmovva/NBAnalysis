@@ -1,0 +1,60 @@
+Please return your best guess for the NBA player(s) mentioned in each of the following Instagram captions. 
+Some players may be referenced by their full names, some by their nicknames, others by their Instagram handles, etc. 
+However, your answers should just be their full name: First Last. Do not include people who are not NBA players. Do not include names of NBA teams. 
+
+Your answers should be in the form of a list of lists of strings (potentially with empty lists), like: [["First1 Last1", "First2 Last2"], [], ["First3 Last3"]. ...]. *Only return the list. Do not return any other text.*
+
+
+Here are some examples:
+
+captions = [
+ '@giannis_an34 stays active for the tip & @bucks lead!',
+ 'Wholesome postgame moments 🥹 #MFFL',
+ 'Behind-the-back dime from @cadecunn1ngham to a @mb3five JAM! 💥 🏆 NBA In-Season Tournament 🏀 Sixers/Pistons East Group A on NBA App',
+ 'PAOLO with the POSTER! 💥',
+ '3x Olympic Gold Medalist Shaun White in the building for Knicks/Jazz! 🥇',
+ '@chet_holmgren rolls for the @okcthunder SLAM! 💥',
+ 'TYRESE HUGE DUNK AND-1 🤯 Pacers/Bucks on NBA App',
+ '@cobywhite drops 31 PTS, 8 3PM in the @chicagobulls home W 👏',
+ 'These 4th-quarter @wemby plays are UNREAL… We have overtime on the NBA App!',
+ "A 7-game win streak sees Orlando surge, but the top 5 stays the same in this week's NBA App Power Rankings 💪 See John Schuhmann's full list on the NBA App!",
+ '👀 🃏 🎯 We’re running out of ways to describe the JOKER’s vision!',
+ 'the recipient of @joelembiid’s jersey tonight? his dad. 🥹',
+ '@dbook warms up in AJ V Shawn Marion PEs for @matrix31 Jersey retirement night! #NBAKicks',
+ 'AUSTIN REAVES. CLUTCH SHOT. 🗣️🗣️🗣️',
+ '👀 the BEST DUNKS from Week 2’s NBA action! 💥',
+ '“To do it in the Garden...Reggie and Ray in the building...my mom and my dad [there too].” Steph Curry reacts to his record-breaking 3-pointer from two years ago today 🗣️ Don’t miss Warriors-Clippers tonight at 10:30pm/et on NBA TV!',
+ '@asanewell catches the lob WITH AUTHORITY 😤 Nike EYBL Scholastic Showcase | @sportscenternext 📺 ESPNU',
+ '@swipathefox punches it home off the @ahmad_monk dime! 💥',
+ 'The @lakers & @orlandomagic exchange triples down the stretch!',
+ '👀 Ben Simmons on target! 🎯',
+ 'LeBron gets loose on the practice court ahead of tonight’s semifinal action! 🆚: PELICANS/LAKERS 🕘: 9:00pm/et on TNT 📺'
+]
+
+player_lists = [
+ ["Giannis Antetokounmpo"],
+ [],
+ ["Cade Cunningham', 'Marvin Bagley III"],
+ ["Paolo Banchero"],
+ [],
+ ["Chet Holmgren"],
+ ["Tyrese Haliburton"],
+ ["Coby White"],
+ ["Victor Wembanyama"],
+ [],
+ ["Nikola Jokic"],
+ ["Joel Embiid"],
+ ["Devin Booker"],
+ ["Austin Reaves"],
+ [],
+ ["Stephen Curry],
+ [],
+ ["De'Aaron Fox", "Malik Monk"],
+ [],
+ ["Ben Simmons"],
+ ["LeBron James"]
+]
+
+
+Now compute the player lists for these captions:
+
